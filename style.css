@@ -1,0 +1,87 @@
+#bulb{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    filter: blur(20px);
+}
+#metalPart {
+    height: 60px;
+    width: 60px;
+    border: 1px solid;
+    background-color: #838282;
+    position: relative;
+    top: 5px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px black;
+    z-index: 1;
+}
+#reflecter{
+    height: 120px;
+    transition: transform 2s;
+    border-radius: 0px 0px 50% 50%;
+    width: 200px;
+    border: 1px solid;
+    box-shadow: 0 0px 20px black;
+
+}
+#otherHalf {
+    border: 1px solid;
+    height: 100px;
+    background-color: #7b7a7a;
+    width: 200px;
+    box-shadow: 0 0 20px black;
+    border-radius: 100px 100px 0 0;
+}
+.onoff{
+    color: rgba(255, 255, 255, 0.601);
+    background-color: rgb(66, 66, 66);
+    font-size: 25PX;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    border-radius: 60%;
+    border: none;
+    bottom: 20px;
+    left: 20px;
+}
+.onoff:hover{
+    background-color: rgb(122, 121, 121);
+
+}
+.onoff:active{
+    background-color: rgb(47, 47, 47);
+
+}
+
+#cable{
+    height: 80px;
+    box-shadow: 0 0 20px black;
+    width: 5px;
+    background-color: #7c7c7c;
+    border: 1px solid;
+    position: relative;
+    top: 10px;
+
+}
+
+
+.final{
+    background-color: #eee313;
+}
+
+#btn2{
+    display: none;
+    font-size: 20px;
+}
+#btn{
+    font-size: 20px;
+    border: 5px solid red;
+}
+.onoff:hover{
+    filter: blur(0px);
+}
